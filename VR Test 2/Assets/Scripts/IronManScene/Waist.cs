@@ -8,6 +8,7 @@ public class Waist : MonoBehaviour {
     public GameObject controllerTouched;
     OVRGrabber grabber;
     public GameObject gunPrefab;
+    bool gunSpawned = false;
 
     // Use this for initialization
     void Start()
@@ -18,6 +19,8 @@ public class Waist : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if(gameObject.name == "WaistLeft")
+        DebugText.DT.Debug("isTouchingController: " + isTouchingController);
         if (isTouchingController)
         {
             bool triggerPulled = false;
@@ -30,32 +33,35 @@ public class Waist : MonoBehaviour {
                 triggerPulled = TouchHandler.TH.rightTouchPrimaryHandTriggerPulled;
             }
 
-            if (triggerPulled && !grabber.grabbedObject)
+            if (!triggerPulled)
+            {
+                gunSpawned = false;
+            }
+            if (gameObject.name == "WaistLeft")
+                DebugText.DT.Debug("isTouchingController: " + isTouchingController + " triggerPulled: " + triggerPulled);
+
+            if (triggerPulled && !grabber.grabbedObject && !gunSpawned)
             {
                 GameObject gunInstance = GameObject.Instantiate(gunPrefab, controllerTouched.transform.position, controllerTouched.transform.rotation);
-                OVRGrabbable grabbable = gunInstance.GetComponent<OVRGrabbable>();
-                //grabbable.GrabBegin(grabber,grabbable.grabPoints[0]);
-                isTouchingController = false;
+                gunSpawned = true;
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        DebugText.DT.Debug(other.name + " entered");
-        if (other.name == "GrabVolumeSmall" || other.name == "GrabVolumeBig")
+        if (other.name == "GrabberCollider")
         {
             isTouchingController = true;
             controllerTouched = other.gameObject;
 
-            grabber = other.transform.parent.parent.gameObject.GetComponent<OVRGrabber>();
+            grabber = other.transform.parent.gameObject.GetComponent<OVRGrabber>();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        DebugText.DT.Debug(other.name + " exited");
-        if (other.name == "GrabVolumeSmall" || other.name == "GrabVolumeBig")
+        if (other.name == "GrabberCollider")
         {
             isTouchingController = false;
         }
