@@ -19,8 +19,6 @@ public class Waist : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.name == "WaistLeft")
-        DebugText.DT.Debug("isTouchingController: " + isTouchingController);
         if (isTouchingController)
         {
             bool triggerPulled = false;
@@ -37,8 +35,6 @@ public class Waist : MonoBehaviour {
             {
                 gunSpawned = false;
             }
-            if (gameObject.name == "WaistLeft")
-                DebugText.DT.Debug("isTouchingController: " + isTouchingController + " triggerPulled: " + triggerPulled);
 
             if (triggerPulled && !grabber.grabbedObject && !gunSpawned)
             {

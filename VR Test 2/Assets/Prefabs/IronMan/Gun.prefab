@@ -179,7 +179,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1625949163995374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -214,7 +214,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672230109848682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -303,8 +303,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.19, y: 6, z: 6.43}
-  m_Center: {x: -0.17, y: 2.89, z: -5.14}
+  m_Size: {x: 11.12765, y: 7.777089, z: 9.860935}
+  m_Center: {x: -0.7547841, y: 2.0014553, z: -6.8554688}
 --- !u!114 &114802929426019984
 MonoBehaviour:
   m_ObjectHideFlags: 1
