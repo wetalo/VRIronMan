@@ -13,9 +13,12 @@ public class MenuSpawner : MonoBehaviour {
 
     Vector3 pointA;
     Vector3 pointB;
+    Vector3 initialPoint;
 
     [SerializeField]
     float distanceBetween = 0.05f;
+    [SerializeField]
+    float menuThickness;
 
     public Transform playerHead;
 
@@ -26,25 +29,48 @@ public class MenuSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (touchControllersAreTouching)
+        if (!hasSpawnedMenu)
         {
-            if (!hasSpawnedMenu)
+            if (touchControllersAreTouching)
             {
-                if (TouchHandler.TH.RightTouchAButtonDown() && TouchHandler.TH.rightTouchPrimaryIndexTriggerPulled 
+
+                if (TouchHandler.TH.RightTouchAButtonDown() && TouchHandler.TH.rightTouchPrimaryIndexTriggerPulled
                     && TouchHandler.TH.LeftTouchAButtonDown() && TouchHandler.TH.leftTouchPrimaryIndexTriggerPulled)
                 {
                     menuInstance = GameObject.Instantiate(menuPrefab);
                     hasSpawnedMenu = true;
+
                     pointA = TouchHandler.TH.LeftTouchPosition();
                     pointB = TouchHandler.TH.RightTouchPosition();
 
-                    Vector3 between = (pointB - pointA).normalized;
-                    float distance = between.magnitude;
+                    Vector3 between = (pointB - pointA);
+                    //float distance = between.magnitude;
                     //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
-                    menuInstance.transform.position = pointA + (between * distanceBetween);
-                    
-                    menuInstance.transform.LookAt(playerHead);
+
+                    initialPoint = pointA + (between * distanceBetween);
                 }
+
+            }
+        }
+        else
+        {
+            if (TouchHandler.TH.RightTouchAButtonDown() && TouchHandler.TH.rightTouchPrimaryIndexTriggerPulled
+                    && TouchHandler.TH.LeftTouchAButtonDown() && TouchHandler.TH.leftTouchPrimaryIndexTriggerPulled)
+            {
+                pointA = TouchHandler.TH.LeftTouchPosition();
+                pointB = TouchHandler.TH.RightTouchPosition();
+
+                Vector3 between = (pointB - pointA);
+                //float distance = between.magnitude;
+                //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
+                menuInstance.transform.localScale = new Vector3( between.x, between.y, menuThickness);
+                menuInstance.transform.position = initialPoint;
+
+                menuInstance.transform.LookAt(playerHead);
+            } else
+            {
+                hasSpawnedMenu = false;
+                menuInstance = null;
             }
         }
 
@@ -53,9 +79,7 @@ public class MenuSpawner : MonoBehaviour {
     public void SetTouchControllersAreTouching(bool controllersTouching)
     {
         touchControllersAreTouching = controllersTouching;
-
-        if(!controllersTouching)
-            hasSpawnedMenu = false;
+        
     }
 
 
