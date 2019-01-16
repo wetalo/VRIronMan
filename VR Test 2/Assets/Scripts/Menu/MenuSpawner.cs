@@ -21,7 +21,6 @@ public class MenuSpawner : MonoBehaviour {
     float menuThickness;
 
     public Transform playerHead;
-    Vector3 worldReferenceVector;
 
 	// Use this for initialization
 	void Start () {
@@ -49,7 +48,8 @@ public class MenuSpawner : MonoBehaviour {
                     //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
 
                     initialPoint = pointA + (between * distanceBetween);
-                    worldReferenceVector = playerHead.forward;
+                    transform.forward = playerHead.forward;
+                    transform.position = playerHead.position;
                 }
 
             }
@@ -63,7 +63,7 @@ public class MenuSpawner : MonoBehaviour {
                 pointB = TouchHandler.TH.RightTouchPosition();
 
                 Vector3 between = (pointB - pointA);
-                between = playerHead.TransformDirection(between);
+                between = transform.TransformDirection(between);
                 //float distance = between.magnitude;
                 //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
                 menuInstance.transform.localScale = new Vector3( between.x, between.y, menuThickness);
