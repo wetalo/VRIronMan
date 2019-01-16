@@ -17,6 +17,8 @@ public class MenuSpawner : MonoBehaviour {
     [SerializeField]
     float distanceBetween = 0.05f;
 
+    public Transform playerHead;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -40,7 +42,8 @@ public class MenuSpawner : MonoBehaviour {
                     float distance = between.magnitude;
                     //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
                     menuInstance.transform.position = pointA + (between * distanceBetween);
-                    //transform.LookAt(pointB);
+                    
+                    menuInstance.transform.LookAt(playerHead);
                 }
             }
         }
