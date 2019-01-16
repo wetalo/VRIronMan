@@ -18,6 +18,8 @@ public class TouchHandler : MonoBehaviour {
     #endregion
     
 
+    
+
     void Awake()
     {
         //Singleton pattern
@@ -46,6 +48,9 @@ public class TouchHandler : MonoBehaviour {
 
         CheckTouchPrimaryHandTriggers();
         CheckTouchPrimaryIndexTriggers();
+
+
+       
         
     }
 
@@ -97,5 +102,23 @@ public class TouchHandler : MonoBehaviour {
 
     }
 
-    
+    public bool RightTouchAButtonDown()
+    {
+        return OVRInput.Get(OVRInput.Button.One);
+    }
+
+    public bool LeftTouchAButtonDown()
+    {
+        return OVRInput.Get(OVRInput.Button.Three);
+    }
+
+    public Vector3 RightTouchPosition()
+    {
+        return OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
+    }
+
+    public Vector3 LeftTouchPosition()
+    {
+        return OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
+    }
 }
