@@ -2001,6 +2001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f38be5faaae684ca16d8536f5ab569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuPrefab: {fileID: 1187825794726536, guid: 5d0beb87833a6d24ba8f629df7997725, type: 2}
+  distanceBetween: 0.05
 --- !u!4 &1441207292
 Transform:
   m_ObjectHideFlags: 0

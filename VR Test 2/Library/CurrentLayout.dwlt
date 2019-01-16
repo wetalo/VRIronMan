@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 129
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1425
     height: 947
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 83
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1425
     height: 490
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 84
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 731
     height: 490
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 292}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 106
+  controlID: 130
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,8 +301,8 @@ MonoBehaviour:
     y: 373
     width: 495
     height: 574
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -343,10 +343,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -480
-    m_HBaseRangeMax: 480
-    m_VBaseRangeMin: -272
-    m_VBaseRangeMax: 272
+    m_HBaseRangeMin: -246.5
+    m_HBaseRangeMax: 246.5
+    m_VBaseRangeMin: -167.5
+    m_VBaseRangeMax: 167.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -414,9 +414,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 3ad7ffff
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_ExpandedIDs: e4fbffff000000004c3f0000523f0000f63f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,14 +466,14 @@ MonoBehaviour:
     height: 469
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 16224.680080846852
+  lastFramingTime: 783.1004908704934
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.0383775, y: 1.7203109, z: -0.32009497}
+    m_Target: {x: -2.9914775, y: 1.8558909, z: -0.53565514}
     speed: 2
-    m_Value: {x: -3.0383775, y: 1.7203109, z: -0.32009497}
+    m_Value: {x: -2.9914775, y: 1.8558909, z: -0.53565514}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -501,13 +501,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2828626, y: 0.016719257, z: -0.004932438, w: -0.9590021}
+    m_Target: {x: -0.18874483, y: 0.15486169, z: -0.030157065, w: -0.96926975}
     speed: 2
-    m_Value: {x: -0.2828626, y: 0.016719257, z: -0.004932438, w: -0.9590021}
+    m_Value: {x: -0.18874483, y: 0.15486169, z: -0.030157065, w: -0.96926975}
   m_Size:
-    m_Target: 0.53364545
+    m_Target: 0.328579
     speed: 2
-    m_Value: 0.53364545
+    m_Value: 0.328579
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 81}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e63c0000
     m_LastClickedID: 15590
     m_ExpandedIDs: 000000007a2d00007a2e0000902f00006a300000ac310000dc3100006a320000d034000046350000023600009e360000a63a0000763b0000ea3b00006c3c0000003d000000ca9a3b

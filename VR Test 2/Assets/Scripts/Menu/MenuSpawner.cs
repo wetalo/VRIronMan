@@ -14,6 +14,9 @@ public class MenuSpawner : MonoBehaviour {
     Vector3 pointA;
     Vector3 pointB;
 
+    [SerializeField]
+    float distanceBetween = 0.05f;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -33,11 +36,11 @@ public class MenuSpawner : MonoBehaviour {
                     pointA = TouchHandler.TH.LeftTouchPosition();
                     pointB = TouchHandler.TH.RightTouchPosition();
 
-                    Vector3 between = pointB - pointA;
+                    Vector3 between = (pointB - pointA).normalized;
                     float distance = between.magnitude;
-                    menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
-                    menuInstance.transform.position = pointA + new Vector3 (between.x / 2.0f, between.y / 2.0f, between.z / 2.0f);
-                    transform.LookAt(pointB);
+                    //menuInstance.transform.localScale  = new Vector3(  distance, menuInstance.transform.localScale.y, menuInstance.transform.localScale.z);
+                    menuInstance.transform.position = pointA + (between * distanceBetween);
+                    //transform.LookAt(pointB);
                 }
             }
         }

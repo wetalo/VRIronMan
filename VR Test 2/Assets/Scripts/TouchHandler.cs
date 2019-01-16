@@ -112,13 +112,25 @@ public class TouchHandler : MonoBehaviour {
         return OVRInput.Get(OVRInput.Button.Three);
     }
 
-    public Vector3 RightTouchPosition()
+    public Vector3 RightTouchLocalPosition()
     {
         return OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
     }
 
-    public Vector3 LeftTouchPosition()
+    public Vector3 LeftTouchLocalPosition()
     {
         return OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
     }
+
+    public Vector3 RightTouchPosition()
+    {
+        return GameObject.Find("AvatarGrabberRight").transform.position;
+    }
+
+    public Vector3 LeftTouchPosition()
+    {
+        return GameObject.Find("AvatarGrabberLeft").transform.position;
+    }
+
+
 }
