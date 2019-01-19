@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holeInTheWallPrefabs:
-  - {fileID: 1200105612169574, guid: 869bc7bcb12762b4f8ee969620bb7573, type: 2}
+  - {fileID: 1519595879131150, guid: 1bf14f64038ef5b4c911205ab4834802, type: 2}
   holeSpeed: 4
 --- !u!4 &505356182
 Transform:
