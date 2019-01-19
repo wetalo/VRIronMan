@@ -603,9 +603,12 @@
     <Compile Include="Assets\Scripts\Guns\Gun.cs" />
     <Compile Include="Assets\Scripts\Guns\KinematicOnSpawn.cs" />
     <Compile Include="Assets\Scripts\Guns\Waist.cs" />
+    <Compile Include="Assets\Scripts\HoleInTheWall\EndOfLevelTrigger.cs" />
+    <Compile Include="Assets\Scripts\HoleInTheWall\HoleBarrier.cs" />
     <Compile Include="Assets\Scripts\HoleInTheWall\HoleInTheWallManager.cs" />
     <Compile Include="Assets\Scripts\HoleInTheWall\HoleInTheWallScoreBoard.cs" />
     <Compile Include="Assets\Scripts\HoleInTheWall\HoleInTheWallSpawner.cs" />
+    <Compile Include="Assets\Scripts\HoleInTheWall\PlayerHole.cs" />
     <Compile Include="Assets\Scripts\IronMan\CharacterScript.cs" />
     <Compile Include="Assets\Scripts\IronMan\Jetpack.cs" />
     <Compile Include="Assets\Scripts\IronMan\Jetpack2.cs" />
