@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 981
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -130,7 +130,7 @@ MonoBehaviour:
     y: 0
     width: 1413
     height: 931
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 10
@@ -153,9 +153,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1413
-    height: 482
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+    height: 475
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
   controlID: 11
 --- !u!114 &8
@@ -175,7 +175,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 355
-    height: 482
+    height: 475
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -200,9 +200,9 @@ MonoBehaviour:
     x: 355
     y: 0
     width: 1058
-    height: 482
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+    height: 475
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -224,9 +224,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 482
+    y: 475
     width: 1413
-    height: 449
+    height: 456
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -255,10 +255,10 @@ MonoBehaviour:
     y: 0
     width: 491
     height: 931
-  m_MinSize: {x: 277, y: 292}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 275, y: 271}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 97
+  controlID: 147
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -332,7 +332,7 @@ MonoBehaviour:
     x: 1423
     y: 100
     width: 489
-    height: 349
+    height: 346
   m_PersistentViewDataDictionary: {fileID: 0}
   SelectedGameObject: {fileID: 0}
   TransformToAttachCollidersTo: {fileID: 0}
@@ -473,13 +473,13 @@ MonoBehaviour:
     x: 8
     y: 100
     width: 353
-    height: 461
+    height: 454
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_ExpandedIDs: 8e86feff2467ffff28b4ffff32d3ffffe4fbffff0000000004400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,17 +526,17 @@ MonoBehaviour:
     x: 365
     y: 100
     width: 1054
-    height: 461
+    height: 454
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 4560.044467813146
+  lastFramingTime: 851.0581612425132
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.030762, y: 6.5969048, z: 1.96328}
+    m_Target: {x: -3.8727164, y: 1.022897, z: 19.814524}
     speed: 2
-    m_Value: {x: -7.030762, y: 6.5969048, z: 1.96328}
+    m_Value: {x: -3.8727164, y: 1.022897, z: 19.814524}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -564,13 +564,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.16824894, y: 0.45336017, z: -0.08758176, w: 0.8709112}
+    m_Target: {x: 0.16753386, y: 0.0103107225, z: -0.0017507472, w: 0.9858109}
     speed: 2
-    m_Value: {x: 0.16824894, y: 0.45336017, z: -0.08758176, w: 0.8709112}
+    m_Value: {x: 0.16753386, y: 0.0103107225, z: -0.0017507472, w: 0.9858109}
   m_Size:
-    m_Target: 8.5977545
+    m_Target: 7.5334935
     speed: 2
-    m_Value: 8.5977545
+    m_Value: 7.5334935
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -603,9 +603,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 8
-    y: 582
+    y: 575
     width: 1411
-    height: 428
+    height: 435
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -619,20 +619,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/HoleInTheWall
+    - Assets/Events/HoleInTheWall
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/HoleInTheWall
+  - Assets/Events/HoleInTheWall
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\UnityProjects\GitHub\VRIronMan\VRIronMan\VR Test 2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 37}
-    m_SelectedIDs: 3a370000
-    m_LastClickedID: 14138
-    m_ExpandedIDs: 000000009c2d0000a02e0000d22f0000b8300000fa31000030320000c032000032350000a8350000103700005e380000203b00000c3c0000823c0000063d00009c3d000000ca9a3b
+    scrollPos: {x: 0, y: 66}
+    m_SelectedIDs: 9c2f0000
+    m_LastClickedID: 12188
+    m_ExpandedIDs: 000000009c2d0000a02e0000d22f0000b8300000fa31000030320000c032000032350000a835000074360000103700005e380000203b00000c3c0000823c0000063d00009c3d0000ca3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -688,7 +688,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000c2430000e839000092320000c23a0000d63a00000457fffff2310000fc310000
+    m_ExpandedInstanceIDs: c6230000c2430000e839000092320000c23a0000d63a00000457fffff2310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
