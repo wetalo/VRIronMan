@@ -20,12 +20,18 @@ public class HoleInTheWallManager : MonoBehaviour {
 
     public GameEvent changeCounter;
     public GameEvent beginLevel;
-    
+
+    public FloatVariable numWins;
+    public FloatVariable numLosses;
+
+    bool wonLevel;
+    bool lostLevel;
 
 	// Use this for initialization
 	void Start () {
+        numWins.Value = 0f;
+        numLosses.Value = 0f;
         BeginCountDown();
-
     }
 	
 	// Update is called once per frame
@@ -40,7 +46,7 @@ public class HoleInTheWallManager : MonoBehaviour {
     }
 
 
-    void BeginCountDown()
+    public void BeginCountDown()
     {
         counter.Value = timeBetweenLevels;
         counterRounded = (int) Mathf.Ceil(counter.Value);
@@ -71,11 +77,33 @@ public class HoleInTheWallManager : MonoBehaviour {
     void BeginLevel()
     {
         state = ManagerStates.doingLevel;
+        if (wonLevel)
+        {
+            numWins.Value++;
+        }
+        if (lostLevel)
+        {
+            numLosses.Value++;
+        }
         beginLevel.Raise();
     }
 
     void DoingLevel()
     {
 
+    }
+
+    public void WonLevel()
+    {
+        wonLevel = true;
+        lostLevel = false;
+        BeginCountDown();
+    }
+
+    public void LostLevel()
+    {
+        wonLevel = false;
+        lostLevel = true;
+        BeginCountDown();
     }
 }

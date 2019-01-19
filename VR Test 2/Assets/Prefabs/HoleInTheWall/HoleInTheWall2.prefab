@@ -29,7 +29,7 @@ GameObject:
   - component: {fileID: 65794704012963288}
   m_Layer: 0
   m_Name: HoleInTheWall2
-  m_TagString: Untagged
+  m_TagString: HoleInTheWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

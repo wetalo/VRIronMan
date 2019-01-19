@@ -9,6 +9,7 @@ public class EndOfLevelTrigger : MonoBehaviour {
 
     public GameEvent beatLevel;
     public GameEvent lostLevel;
+    
 
 	// Use this for initialization
 	void Start () {

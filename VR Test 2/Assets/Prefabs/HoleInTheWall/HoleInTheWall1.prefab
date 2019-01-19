@@ -31,9 +31,9 @@ GameObject:
   - component: {fileID: 65742495353533798}
   - component: {fileID: 65133346190247724}
   - component: {fileID: 65484308564263730}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: HoleInTheWall1 1
-  m_TagString: Untagged
+  m_TagString: HoleInTheWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1906244139838740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
