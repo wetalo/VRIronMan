@@ -601,6 +601,10 @@
     <Compile Include="Assets\Scripts\Guns\Gun.cs" />
     <Compile Include="Assets\Scripts\Guns\KinematicOnSpawn.cs" />
     <Compile Include="Assets\Scripts\Guns\Waist.cs" />
+    <Compile Include="Assets\Scripts\IronMan\CharacterScript.cs" />
+    <Compile Include="Assets\Scripts\IronMan\Jetpack.cs" />
+    <Compile Include="Assets\Scripts\IronMan\Jetpack2.cs" />
+    <Compile Include="Assets\Scripts\IronMan\WaistIronman.cs" />
     <Compile Include="Assets\Scripts\Menu\ControllersTouching.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuSpawner.cs" />
     <Compile Include="Assets\Scripts\PhalanxScene\Arrow.cs" />
