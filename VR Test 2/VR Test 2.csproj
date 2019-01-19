@@ -315,6 +315,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderEditor.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderPreferences.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshListBuilder.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshTransform.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
