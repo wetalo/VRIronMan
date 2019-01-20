@@ -18,9 +18,9 @@ public class EndOfLevelTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        DebugText.DT.Debug("wentThroughHole: + " + wentThroughHole + "\n" +
+       /* DebugText.DT.Debug("wentThroughHole: + " + wentThroughHole + "\n" +
                             "touchedBorder: + " + touchedBorder
-                            );
+                            );*/
 	}
 
     private void OnTriggerEnter(Collider other)
