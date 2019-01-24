@@ -486,6 +486,8 @@ Assets/Scripts/HoleInTheWall/HoleInTheWallManager.cs
 Assets/Scripts/HoleInTheWall/HoleInTheWallScoreBoard.cs
 Assets/Scripts/HoleInTheWall/HoleInTheWallSpawner.cs
 Assets/Scripts/HoleInTheWall/PlayerHole.cs
+Assets/Scripts/Hook/HookRenderer.cs
+Assets/Scripts/Hook/TargetPoint.cs
 Assets/Scripts/IronMan/CharacterScript.cs
 Assets/Scripts/IronMan/Jetpack.cs
 Assets/Scripts/IronMan/Jetpack2.cs
